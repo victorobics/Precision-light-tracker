@@ -48,9 +48,9 @@ Everything is wired directly to the Nano as shown below:
 | Name | Purpose | Qty | Total (USD) | Link |
 | :--- | :--- | :---: | :--- | :--- |
 | 3D Printed Parts | Structure and housing | 1 | $3.00 | [View Files](./) |
-| Micro Servos SG90 | Pan & Tilt movement | 2 | $9.22 | [Amazon Link](PEGA_LINK) |
-| TEMT6000 Sensors | Light detection | 4 | $12.68 | [Amazon Link](PEGA_LINK) |
-| Arduino Nano | Main controller | 1 | $11.53 | [Amazon Link](PEGA_LINK) |
+| Micro Servos SG90 | Pan & Tilt movement | 2 | $9.22 | [Amazon Link](https://www.amazon.es/-/en/HOTUT-Pieces-Helicopters-Vehicle-Models/dp/B0DSPYZ4SH/ref=sr_1_11?crid=11P4S5D2O119K&dib=eyJ2IjoiMSJ9.A04Va_VMR3NyeR54cJikCspZNMz05JVdiRY0rmQlCWTIs-G5V_d0KXfM_tEQmkQt8Frh3h2LLV_ntY4v9CpHwYQIZ2KuB82Xf6RPcZ2w1T8x5AXGrxNC-_0sdfrSMgnE1AlE0ihyCD_LC2GobcNV7NjmpjGps4getRQ3T4AK9BvyiKEIvTuabsCMiu9qBIUaDVutiuGYKpVLLrRFE-cCDimBNw1MyHczwe_i3f9fb8vUyqADGpuJSjlpQ3ctwvFmpQy-9sv2pcrwxAzJTFBvr2UZ2E1tafN-IccaCjt4TDo.Mg0ZCYvwK8hECP17acZcv1Uk4SFWt817w3ah7q0tk74&dib_tag=se&keywords=servomotores&qid=1775147990&sprefix=servomotore%2Caps%2C94&sr=8-11&th=1) |
+| TEMT6000 Sensors | Light detection | 4 | $12.68 | [Amazon Link](https://www.amazon.es/Youmile-TEMT6000-Ambient-Intensity-Detection/dp/B08SM32DJL/ref=sr_1_2_sspa?crid=15O9WNFDWMWQS&dib=eyJ2IjoiMSJ9.OUM4SBCcli6KQBNyBDGglg.SOXKNxyW3oqY40Ion3Uf0XbyKzN_duGgHWyCMX3NFZ4&dib_tag=se&keywords=temt6000&qid=1775147653&sprefix=temt6000%2Caps%2C95&sr=8-2-spons&aref=UNFn4q1ro1&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
+| Arduino Nano | Main controller | 1 | $11.53 | [Amazon Link](https://www.amazon.es/-/en/ELEGOO-Na-no-Compatible-Arduino-Project/dp/B0716T2L77/ref=sr_1_1?dib=eyJ2IjoiMSJ9.qVOpDeZJd_-KwgDo1A2QveW9lSpTT6UbsXs5XnnEEhOh49q705fQjL41JFiCm5Ir1oaH5tTbAaja5j2TCxNb1VbdJsc-JiG_xZe7BxweomqN77-n0PDTkLvlYrymF6d9S952xPyGMTEbEX9vwhY3WhaPRkifsfNCdxgbuRblT9P-14rg6JmUc5yHPLlRaTz9oTWG9VNWTrAqqmwScdedeSuXTkDyfYi7LQEi9EV6-gvKJ9l8hRcNO2JFR0t3SXdS8ULhV-JYlR5ry-Im4jHZ9ADeJu5Fp-m-LmVP-ajdBW4.eWnxISyO6FJHWf8VVjivNNnluf3s4LI5XHhRBZrVK1k&dib_tag=se&keywords=arduino%2Bnano&qid=1775147568&sr=8-1&th=1) |
 | **Total Cost** | | | **$36.43** | |
 
 ---
