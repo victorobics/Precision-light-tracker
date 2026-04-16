@@ -1,8 +1,9 @@
-<img width="384" height="240" alt="CAD_view" src="https://github.com/user-attachments/assets/9c2ee669-fed4-4af3-bc3c-348eaa1da2b6" />
 # Dual-Axis Light Tracker
 
 ## 1. Overview
 This is a small solar light I built using an **Arduino Nano**. It uses four light sensors to find where the brightest light is and moves two servos (horizontal and vertical) to point directly at it. It’s basically a simplified version of how professional solar panels follow the sun to get more energy.
+
+<img width="384" height="240" alt="image" src="https://github.com/user-attachments/assets/7c5043ac-cc1c-4150-93d7-3595696ac311" />
 
 ## 2. Why I made this
 I wanted to see if I could build a mechanical system that reacts to its environment in real-time. It was a great way to practice how to turn analog sensor data into precise motor movements and to understand the math behind comparing light levels to decide direction.
@@ -18,7 +19,8 @@ To keep the movement smooth:
 ---
 
 ## 4. 3D Model & Visuals
-![3D Model Screenshot](<img width="384" height="240" alt="image" src="https://github.com/user-attachments/assets/fb979155-2279-4966-a34f-a2fa28af51c7" />)
+<img width="384" height="240" alt="image" src="https://github.com/user-attachments/assets/e3cd31bf-37cc-452a-a3d9-57a90d7bceb0" />
+
 *Screenshot of the full assembly in Tinkercad/Fusion 360.*
 
 ---
