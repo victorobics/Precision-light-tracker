@@ -1,44 +1,46 @@
 # Dual-Axis Light Tracker
 
 ## 1. Overview
-This is a small solar light I built using an **Arduino Nano**. It uses four light sensors to find where the brightest light is and moves two servos (horizontal and vertical) to point directly at it. It’s basically a simplified version of how professional solar panels follow the sun to get more energy.
+This is a solar light tracking system built with an **Arduino Nano**. It uses four light sensors to detect the brightest light source and moves two servos (horizontal and vertical) to point directly at it. It simulates the mechanism professional solar panels use to maximize energy efficiency.
 
-<img width="384" height="240" alt="image" src="https://github.com/user-attachments/assets/7c5043ac-cc1c-4150-93d7-3595696ac311" />
+<p align="center">
+  <img width="500" alt="Physical Project" src="https://github.com/user-attachments/assets/7c5043ac-cc1c-4150-93d7-3595696ac311" />
+</p>
 
 ## 2. Why I made this
-I wanted to see if I could build a mechanical system that reacts to its environment in real-time. It was a great way to practice how to turn analog sensor data into precise motor movements and to understand the math behind comparing light levels to decide direction.
+I wanted to build a mechanical system that reacts to its environment in real-time. This project helped me practice processing analog sensor data, coordinating 2-axis motor movements, and understanding the logic behind light-intensity comparison.
 
 ## 3. How it works
-The "brain" of the project is the Arduino, which constantly reads four **TEMT6000** sensors arranged in a cross (Up, Down, Left, Right). 
-
-To keep the movement smooth:
-* **The Logic:** It doesn't just look for the highest number. It compares the difference between opposite sensors (Left vs. Right and Up vs. Down). 
-* **Proportional Speed:** If the light is way off to the side, the servos move faster. As it gets closer to the center, they slow down so it doesn't "jitter" or overshoot the target.
-* **Accuracy:** I designed the 3D structure with separate walls for each sensor so they don't interfere with each other.
+The system uses four **TEMT6000** sensors arranged in a cross configuration. 
+* **The Logic:** Instead of just looking for the highest value, it calculates the difference between opposite sensors (Left/Right and Up/Down). 
+* **Proportional Movement:** If the light is far from the center, the servos move faster; as it aligns, the movement slows down to avoid jitter.
+* **Mechanical Design:** I designed separate compartments for each sensor to reduce light interference and improve directional accuracy.
 
 ---
 
-## 4. 3D Model & Visuals
-<img width="384" height="240" alt="image" src="https://github.com/user-attachments/assets/e3cd31bf-37cc-452a-a3d9-57a90d7bceb0" />
+## 4. 3D Model & Assembly
+<p align="center">
+  <img width="500" alt="CAD Assembly" src="https://github.com/user-attachments/assets/e3cd31bf-37cc-452a-a3d9-57a90d7bceb0" />
+</p>
 
-*Screenshot of the full assembly in Tinkercad/Fusion 360.*
+*Full CAD assembly including electronics (Arduino Nano, Servos, and Sensors).*
 
 ---
 
-## 5. Wiring
-Everything is wired directly to the Nano as shown below:
+## 5. Wiring Diagram
+Everything is connected directly to the Arduino Nano as follows:
 
 
-| Component | Arduino Pin |
+| Component | Pin |
 | :--- | :--- |
 | **Sensor Down** | A0 |
-| **Sensor Left** | A1 |
-| **Sensor Right** | A2 |
+| **Sensor Left** | A2 |
+| **Sensor Right** | A1 |
 | **Sensor Up** | A3 |
-| **Servo Pan** | D9 |
-| **Servo Tilt** | D10 |
+| **Servo PAN** | D9 |
+| **Servo TILT** | D10 |
 
-*Note: All components share the 5V and GND pins of the Arduino via USB.*
+*Note: All components share common 5V and GND rails via the Arduino's USB power.*
 
 ---
 
@@ -55,7 +57,14 @@ Everything is wired directly to the Nano as shown below:
 
 ---
 
-## 7. Notes & Usage
-1. **Calibration:** The tracker works best with a focused light source (like a flashlight) at 20-30cm.
-2. **Environment:** High ambient light can confuse the sensors; it's best tested in dim rooms.
-3. **Power:** Can be powered via any standard 5V USB power bank or computer port.
+## 7. Assembly Notes & Lessons Learned
+* **Sensor Depth:** During testing, I found that installing sensors between **10mm to 20mm deep** inside the structure provides the most accurate readings.
+* **Cable Management:** I used silicone to secure joints and keep cables flush against the walls, preventing them from tangling during rotation.
+* **Prototyping:** I initially installed the sensors in the wrong orientation, which required a code update. For future versions, I would design cable holes directly into the CAD to avoid manual drilling after printing.
+
+---
+
+## 8. Usage
+1. Upload the `light_tracker_final.ino` firmware.
+2. Power via USB.
+3. Use a flashlight at 20-30cm to test the tracking speed.
