@@ -1,3 +1,4 @@
+<img width="384" height="240" alt="CAD_view" src="https://github.com/user-attachments/assets/9c2ee669-fed4-4af3-bc3c-348eaa1da2b6" />
 # Dual-Axis Light Tracker
 
 ## 1. Overview
