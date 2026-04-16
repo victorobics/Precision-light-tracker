@@ -30,15 +30,37 @@ The system uses four **TEMT6000** sensors arranged in a cross configuration.
 ## 5. Wiring Diagram
 Everything is connected directly to the Arduino Nano as follows:
 
+Dual-Axis Light Tracker Wiring
 
-| Component | Pin |
-| :--- | :--- |
-| **Sensor Down** | A0 |
-| **Sensor Left** | A2 |
-| **Sensor Right** | A1 |
-| **Sensor Up** | A3 |
-| **Servo PAN** | D9 |
-| **Servo TILT** | D10 |
+## Wiring Table
+
+### Power
+
+| Source        | Connection       |
+|--------------|------------------|
+| 5V Power Supply USB| Arduino Nano USB |
+
+---
+
+### Servos
+
+| Component | Signal Pin | VCC | GND |
+|----------|-----------|-----|-----|
+| Servo PAN  | D9        | 5V  | GND |
+| Servo TILT | D10       | 5V  | GND |
+
+---
+
+### Sensors
+
+| Sensor Position | OUT Pin | VCC | GND |
+|-----------------|--------|-----|-----|
+| Down            | A0     | 5V  | GND |
+| Right           | A1     | 5V  | GND |
+| Left            | A2     | 5V  | GND |
+| Up              | A3     | 5V  | GND |
+
+---
 
 *Note: All components share common 5V and GND rails via the Arduino's USB power.*
 
